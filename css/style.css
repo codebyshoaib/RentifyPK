@@ -873,7 +873,7 @@ footer .copyright {
 
 /*+++++++++++++++++++++++++++++++++++About Page++++++++++++++++++++++++++*/
 .page-banner {
-  background-image: url("/assets/cta.png");
+  background-image: url("./assets/cta.png");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: right;
