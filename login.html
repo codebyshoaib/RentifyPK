@@ -41,18 +41,19 @@
         </div>
         <div class="login-form">
             <h3 class="h3-head">Login Form</h3>
-            <form action="">
+            <form action="" id="loginForm" onsubmit="login(event)">
 
                 <div class="login-email">
-                    <label for="email">Email Address</label>
-                    <input type="email" name="email" id="" placeholder="abc@gmail.com">
+                    <label for="loginEmail">Email Address</label>
+                    <input type="email" name="email" id="loginEmail" placeholder="demo@gmail.com" autocomplete="email">
                 </div>
                 <div class="login-password">
-                    <label for="Password">Password</label>
-                    <input type="password" name="Password" id="" placeholder="*******">
+                    <label for="loginPassword">Password</label>
+                    <input type="password" name="Password" id="loginPassword" placeholder="demo">
                 </div>
 
-                <input type="submit" name="submit" id="submit" class="submit-bt book-btn">
+                <input type="submit" name="submit" id="submit" class="submit-bt book-btn" onclick="login()">
+            </form>
         </div>
     </section>
     <footer class="footer" id="footer">
@@ -110,5 +111,5 @@
         </div>
     </footer>
 </body>
-
+<script src="./js/script.js"></script>
 </html>

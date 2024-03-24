@@ -39,26 +39,27 @@
         </div>
         <div class="signup-form">
             <h3 class="h3-head">Sign Up Form</h3>
-            <form action="">
+            <form action="" id="signupForm">
 
                 <div class="signup-name">
-                    <label for="full-name">Full Name</label>
-                    <input type="text" name="full-name" id="" placeholder="Shoaib ">
+                    <label for="signupUsername">Full Name</label>
+                    <input type="text" name="full-name" id="signupUsername" placeholder="Shoaib ">
                 </div>
                 <div class="signup-email">
-                    <label for="email">Email Address</label>
-                    <input type="email" name="email" id="" placeholder="abc@gmail.com">
+                    <label for="signupEmail">Email Address</label>
+                    <input type="email" name="email" id="signupEmail" placeholder="abc@gmail.com" autocomplete="email">
                 </div>
                 <div class="signup-password">
-                    <label for="Password">Password</label>
-                    <input type="password" name="Password" id="" placeholder="*******">
+                    <label for="signupPassword">Password</label>
+                    <input type="password" name="Password" id="signupPassword" placeholder="*******">
                 </div>
                 <div class="confirm-signup-password">
-                    <label for="Password">Confirm Password</label>
-                    <input type="password" name="confirm-Password" id="" placeholder="*******">
+                    <label for="signupConfirmPassword">Confirm Password</label>
+                    <input type="password" name="confirm-Password" id="signupConfirmPassword" placeholder="*******">
                 </div>
 
-                <input type="submit" name="submit" id="submit" class="submit-bt book-btn">
+                <input type="submit" name="submit" id="submit" class="submit-bt book-btn" onclick="signUp()">
+                </form>
         </div>
     </section>
     <footer class="footer" id="footer">
@@ -116,5 +117,5 @@
         </div>
     </footer>
 </body>
-
+<script src="./js/script.js"></script>
 </html>
