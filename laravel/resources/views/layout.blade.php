@@ -17,5 +17,8 @@
         @include('include.header')
         @yield('content')
         @include('include.footer')
+
+        <script src="{{ asset('js/vehicles.js') }}"></script>
+
 </body>
 </html>

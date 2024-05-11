@@ -320,5 +320,5 @@
         <a href="our-fleet.html"><button class="bt book-btn">Book Now</button></a>
       </div>
     </section>
-   
+    
 @endsection

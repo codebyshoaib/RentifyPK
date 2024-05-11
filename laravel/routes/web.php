@@ -15,6 +15,9 @@ Route::get('/registeration',[AuthManager::class,'registeration'])->name('registe
 Route::post('/registeration',[AuthManager::class,'registerationPost'])->name('registeration.post');
 Route::get('/logout',[AuthManager::class,'logout'])->name('logout');
 
+use App\Http\Controllers\VehicleController;
+
+Route::get('/vehicles', [VehicleController::class, 'index']);
 
 //page routes
 Route::get('/', function () {
