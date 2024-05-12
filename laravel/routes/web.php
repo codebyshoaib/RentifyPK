@@ -31,4 +31,4 @@ Route::get('/about', function () {
 })->name('about');
 Route::get('/fleet', function () {
     return view('fleet');
-})->name('fleet');
+})->name('fleet'); 

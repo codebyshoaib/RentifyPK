@@ -645,13 +645,24 @@ h3 {
 .checked {
   color: orange;
 }
-.vehicle-cards {
+#vehicle-cards {
   display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  margin-top: 50px;
-  column-gap: 40px;
+  flex-wrap: wrap;
+  justify-content: space-between; /* Adjust as needed */
+  gap: 20px; /* Adjust the gap between cards */
+}
+.card {
+  flex: 0 0 calc(25.33% - 20px); /* Adjust the width of each card */
+  /* For responsiveness, adjust this value based on screen size */
+  /* You can use media queries to set different widths for different screen sizes */
+  /* For example: @media (max-width: 768px) { flex: 0 0 calc(50% - 20px); } */
+  /* For mobile, you may want to set the width to 100% */
+  /* For example: @media (max-width: 480px) { flex: 0 0 100%; } */
+  background-color: #f9f9f9; /* Adjust background color as needed */
+  border: 1px solid #ccc; /* Adjust border style as needed */
+  border-radius: 5px; /* Adjust border radius as needed */
+ 
+  box-sizing: border-box;
 }
 .veh-info p{
   font-size: 1.2rem;

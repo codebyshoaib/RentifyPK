@@ -6,6 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>RentifyPK</title>
   <link href="{{ asset('css/style.css') }}" rel="stylesheet">
+
 </head>
 <body>
         @if(auth()->check())
@@ -18,7 +19,6 @@
         @yield('content')
         @include('include.footer')
 
-        <script src="{{ asset('js/vehicles.js') }}"></script>
-
 </body>
+<script src="{{ asset('js/vehicles.js') }}"></script>
 </html>
